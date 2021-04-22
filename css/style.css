@@ -35,6 +35,10 @@ h1, h2, h3, small{
   font-family: 'Quicksand',"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
+.d-off_pc {
+  display: none;
+}
+
 /* HEADER 
 --------------------------------*/
 .content-bg {
@@ -43,8 +47,12 @@ h1, h2, h3, small{
     padding: 25px 0;
     margin: 0 auto;
 }
+header {
+  padding-top: 0!important;
+}
 header h1 {
     text-align: center;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .nav-pc ul {
@@ -197,6 +205,13 @@ header h1 {
 .modal_content button {
   background-color: #fff;
   padding: 5px 20px;
+  font-weight: bold;
+}
+.change {
+  display: none;
+}
+.active {
+  display: inline-block;
 }
 /* FOOTER
 --------------------------------*/
@@ -217,12 +232,11 @@ footer {
 /* スマートフォン用　
 --------------------------------*/
 @media (max-width: 600px) {
-  /* ナビメニュー */
-    .nav-pc {
-        display: none;
+    .d-off_sp {
+      display: none;
     }
-    .hamburger-menu {
-        display: block;
+    .d-on_sp {
+      display: block;
     }
   /* ヘッダーロゴ */
     header h1 {
@@ -242,17 +256,12 @@ footer {
     .item-box button{
       width: 100%;
     }
-    #plofile p {
-      padding-top: 10px;
-    }
+  /* モーダル */
     .modal_content {
       width: 90%;
     }
-    /* モーダル */
-    .change {
-      display: none;
+    #plofile p {
+      padding-top: 10px;
     }
-    .active {
-      display: inline-block;
-    }
+
 }
