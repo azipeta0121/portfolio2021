@@ -32,7 +32,7 @@ $(function() {
 });
 // クリックで状態切り替え
 $(function() {
-  $(".change").click(function() {
-    $(".change").toggleClass("active");
+  $(".change_btn").click(function() {
+    $(".change_img").toggleClass("active");
   });
 });

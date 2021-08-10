@@ -158,11 +158,13 @@ header h1 {
 }
 .item-box {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
   list-style: none;
 }
 .item-box li {
-  margin : 0 2%;
+  margin : 1% 1%;
 }
 @media all and (-ms-high-contrast: none){
   .item-box li {
@@ -207,7 +209,7 @@ header h1 {
   padding: 5px 20px;
   font-weight: bold;
 }
-.change {
+.change_img {
   display: none;
 }
 .active {
