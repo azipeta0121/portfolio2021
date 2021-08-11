@@ -247,6 +247,7 @@ footer {
   /* 制作物 */
     .item-box {
       flex-direction: column;
+      align-content: center;
     }
     .item-box li {
       margin: 20px 0 0 0;
